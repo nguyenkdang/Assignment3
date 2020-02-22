@@ -18,6 +18,7 @@ class Token:
                     if len(token) != 0:
                         tokenAlpha.append(token)
                         token = ""
+        tokenAlpha.append(token)
         f.close()
         return tokenAlpha
 
